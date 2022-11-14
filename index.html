@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOB APPLICATION</title>
+
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .box {
+            /* border: 5px solid black; */
+            height: 550px;
+            width: 600px;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 241, 197);
+            border-radius: 50px;
+        }
+
+        .b {
+            height: 60px;
+            display: flex;
+            margin: 5px;
+            padding: 5px;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        .bi {
+            height: 20px;
+            margin: 5px;
+        }
+
+        input {
+            width: 180px;
+            height: 25px;
+            border: 2px solid rgb(255, 200, 145);
+            box-shadow: 1px 1px 3px rgb(255, 197, 116);
+        }
+
+        .heading {
+            align-items: center;
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+
+        .i {
+            display: flex;
+            flex-direction: column;
+            margin: 0px 20px;
+        }
+
+        .btn {
+            height: 30px;
+            width: 100px;
+            margin-left: 350px;
+            background-color: rgb(255, 47, 47);
+            border-radius: 5px;
+            font-weight: bolder;
+        }
+
+        .head {
+            margin-left: 25px;
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        ::placeholder {
+            font-size: 12px;
+        }
+
+        input:hover {
+            border-color: rgb(240, 153, 100);
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+
+        <form action="/" method="post">
+
+            <div class="heading b">
+                <h1 class="head">Job Application (Web)</h1>
+            </div>
+
+            <div class="box-1 b">
+                <div class="box-1-1 bi">
+                    <div class="i">
+                        <label for="firstN">First Name</label>
+                        <input type="text" name="fname" id="firstN" placeholder="Enter first name">
+                    </div>
+                </div>
+                <div class="box-1-2 bi">
+                    <div class="i">
+                        <label for="lastN">Last Name</label>
+                        <input type="text" name="lname" id="lastN" placeholder="Enter last name">
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-2 b">
+                <div class="box-2-1 bi">
+                    <div class="i">
+                        <label for="Email">Email</label>
+                        <input type="email" name="pemail" id="Email" placeholder="Enter your email">
+                    </div>
+                </div>
+                <div class="box-2-2 bi">
+                    <div class="i">
+                        <label for="select">Select</label>
+                        <select name="pselect" id="select">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-3 b">
+                <div class="box-3-1 bi">
+                    <div class="i">
+                        <label for="address">Enter address</label>
+                        <textarea name="paddress" id="address" cols="60" rows="2" style="border-radius: 10px;"
+                            placeholder="Enter you full address"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-4 b ">
+                <div class="box-4-1 bi">
+                    <div class="i">
+                        <label for="city">City</label>
+                        <input type="text" name="pcity" id="city" placeholder="Enter your city">
+                    </div>
+                </div>
+                <div class="box-4-2 bi">
+                    <div class="i">
+                        <label for="pincode">Pincode</label>
+                        <input type="text" name="ppincode" id="pincode" placeholder="Enter your pincode">
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-5 b">
+                <div class="box-5-1 bi">
+                    <div class="i">
+                        <label for="date">Start Date</label>
+                        <input type="date" name="pdate" id="date">
+                    </div>
+                </div>
+                <div class="box-5-2 bi">
+                    <div class="i">
+                        <label for="file">Upload your CV</label>
+                        <input type="file" name="pcv" id="file">
+                    </div>
+                </div>
+            </div>
+
+            <div class="submit b">
+                <button class="btn" type="submit">Apply Now</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
